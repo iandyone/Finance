@@ -553,7 +553,7 @@
     .features:nth-child(2n) .features__body {
         flex-direction: column-reverse;
     }
-    .features:nth-child(2n+1) .features__body {
+    .features:nth-child(2n + 1) .features__body {
         flex-direction: column;
     }
 
@@ -646,6 +646,9 @@
 }
 
 @media (max-width: 768px) {
+    .videos {
+        padding: 20px 0;
+    }
     .videos__demos {
         flex-direction: column;
         row-gap: 30px;
@@ -660,5 +663,56 @@
     .videos__demo {
         flex-basis: 320px;
         background-position: unset;
+    }
+}
+
+/* --- BANNER --- */
+
+.banner {
+    padding: 25px 0;
+}
+
+.banner__body {
+    padding: 45px 70px;
+    /* display: flex; */
+    border-radius: 24px;
+    background: #141a25 url("../assets/banner/Illustration.svg") right center no-repeat;
+}
+.banner__content {
+    max-width: 510px;
+}
+.banner__title {
+    margin-bottom: 14px;
+}
+.banner__text {
+    margin-bottom: 42px;
+}
+
+
+@media (max-width: 1200px) {
+    /* .banner__body {
+        padding: 45px 0px;
+    } */
+}
+
+@media (max-width: 992px) {
+    .banner__body {
+        background: #141a25;
+   }
+}
+
+@media (max-width: 768px) {
+    .banner__content {
+        max-width: none;
+    }
+    .banner__body {
+        padding: 20px 40px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .banner__body {
+        padding: 20px;
     }
 }
