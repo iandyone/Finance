@@ -550,10 +550,10 @@
         max-width: none;
     }
 
-    .features:nth-child(odd) .features__body {
+    .features:nth-child(2n) .features__body {
         flex-direction: column-reverse;
     }
-    .features:nth-child(even) .features__body {
+    .features:nth-child(2n+1) .features__body {
         flex-direction: column;
     }
 
