@@ -543,7 +543,6 @@
         padding: 20px 0;
     }
     .features__body {
-        flex-direction: column-reverse;
         row-gap: 40px;
         align-items: center;
     }
@@ -551,7 +550,10 @@
         max-width: none;
     }
 
-    .features:last-child .features__body {
+    .features:nth-child(odd) .features__body {
+        flex-direction: column-reverse;
+    }
+    .features:nth-child(even) .features__body {
         flex-direction: column;
     }
 
