@@ -16,8 +16,9 @@
   .burger span, .burger span:before, .burger span:after{
     width: 100%;
     position: absolute;
-    height: 4px;
+    height: 2px;
     background: #333;
+    background: #f4f4f4;
     display: block;
     transition: .3s;
     border-radius: 5px;
